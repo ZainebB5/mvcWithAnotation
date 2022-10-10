@@ -45,9 +45,9 @@ public class UserRepository {
 
         final UserEntity foundUser = em.find(UserEntity.class, id);
 
-        foundUser.setFName(firstName);
-        foundUser.setMName(middelName);
-        foundUser.setLName(lastName);
+        foundUser.setlName(firstName);
+        foundUser.setmName(middelName);
+        foundUser.setfName(lastName);
 
         em.getTransaction().commit();
         em.close();

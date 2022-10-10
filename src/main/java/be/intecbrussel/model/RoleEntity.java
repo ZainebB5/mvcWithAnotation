@@ -1,14 +1,10 @@
 package be.intecbrussel.model;
 
 import jakarta.persistence.*;
-import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-@Getter
-@Setter
-@NoArgsConstructor
 
 @Entity
 
@@ -32,4 +28,36 @@ public class RoleEntity {
     @Column(name = "active", nullable = false)
     private Boolean active = false;
 
+    public RoleEntity() {
+    }
+
+    public RoleEntity(String title, String description, Boolean active) {
+        this.title = title;
+        this.description = description;
+        this.active = active;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
 }
