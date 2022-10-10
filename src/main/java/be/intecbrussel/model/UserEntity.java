@@ -20,6 +20,7 @@ public class UserEntity {
     private Long id;
 
     @NotBlank
+    @NotNull(message = "Name can't be null ! ")
     @Column(name = "f_name")
     private String fName;
 
@@ -32,7 +33,7 @@ public class UserEntity {
     private String lName;
 
     @Email
-    @NotNull
+    @NotNull(message = "fghhjujbg")
     @Column(name = "email", nullable = false, unique = true , length = 1000)
     private String email;
 

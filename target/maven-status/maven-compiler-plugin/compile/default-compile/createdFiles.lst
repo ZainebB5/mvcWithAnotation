@@ -1,5 +1,6 @@
 be\intecbrussel\model\MessageEntity.class
 be\intecbrussel\service\RoleRepository.class
+be\intecbrussel\util\ValidationUtil.class
 be\intecbrussel\model\RoleEntity.class
 be\intecbrussel\util\JPAUtil.class
 be\intecbrussel\model\UserEntity.class
